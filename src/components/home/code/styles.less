@@ -19,7 +19,8 @@
             width: 800px;
             align-content: left;
             border-top: 1px solid @color-grey3;
-
+            margin-bottom:@spacing-xlarge;
+            
             h2{
                 font-family: montserrat-light;
                 color: @color-grey7;
@@ -45,4 +46,50 @@
 
     }
    
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        .flexContainer{
+            .item{
+                width: 800px;
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) { 
+    .container{
+        .flexContainer{
+            .item{
+                width: 800px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 651px){
+    .container{
+        padding-right: @spacing-xlarge;
+        padding-left: @spacing-xlarge;
+        .flexContainer{
+            .item{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px){
+   .container{
+        padding-right: @spacing-xlarge;
+        padding-left: @spacing-xlarge;
+        .flexContainer{
+            .item{
+                width: 100%;
+            }
+        }
+    }
 }
