@@ -13,14 +13,14 @@ export default class Code extends Component {
                     <div className={styles.item}>
                         <h2>Portfolio (React)</h2>
                         <p>You can see all the source files for this website. </p>
-                        <a target="blank" href="https://gitlab.com/heathornhawk/Portfolio">View Project</a>
+                        <a target="blank" href="https://github.com/heathornhawk/portfolio">View Project</a>
                     </div>
                     <div className={styles.item}>
                         <h2>Weather App (Angular 1)</h2>
                         <p>
                             I was asked by a company to build a weather app as a part of my interview process. Here it is...
                         </p>
-                        <a href="https://gitlab.com/heathornhawk/weather-app">View Project</a>
+                        <a target="blank" href="https://gitlab.com/heathornhawk/weather-app">View Project</a>
                     </div>
                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </div>
