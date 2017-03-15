@@ -20,7 +20,7 @@ export default class Code extends Component {
                         <p>
                             I was asked by a company to build a weather app as a part of my interview process. Here it is...
                         </p>
-                        <a target="blank" href="https://gitlab.com/heathornhawk/weather-app">View Project</a>
+                        <a target="blank" href="https://github.com/heathornhawk/weather-app">View Project</a>
                     </div>
                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </div>
