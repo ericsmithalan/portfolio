@@ -55,6 +55,4 @@ typings/
 # dotenv environment variables file
 .envnode_modules
 
-dist/*.jpg
-dist/*.zip
 .vscode
