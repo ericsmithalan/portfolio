@@ -1,0 +1,137 @@
+@import '../../common/styles/fonts';
+@import '../../common/styles/colors';
+@import '../../common/styles/spacing';
+
+.container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    color: @color-grey9;
+    margin-top: @spacing-xlarge;
+    padding-top: @spacing-xlarge;
+
+    .spacer{
+        height: 50px;
+    }
+
+    h1 {
+        font-family: montserrat-light;
+        color: @color-grey9;
+        font-size: @font-size-h1;
+        line-height: @font-size-h1;
+        margin:0;
+        padding:0;
+        margin-top: @spacing-xlarge;
+    }
+    h3 {
+        font-family: montserrat-thin;
+        color: @color-lightBlueGreen;
+        font-size: @font-size-h3;
+        line-height: @font-size-h3;
+         margin:0;
+        padding:0;
+    }
+    h4 {
+        font-family: montserrat-thin;
+        color: @color-grey9;
+        font-size: @font-size-h4;
+        line-height: @font-size-h4;
+        margin:0;
+        padding:0;
+    }
+    
+    .button {
+        display: flex;
+        z-index: 200;
+        position:fixed;
+        top: 25px;
+        right: 25px;
+        flex-direction: row;
+        height: 65px;
+        width: 270px;
+        align-items: center;
+        justify-content: center;
+        color: @color-lightBlueGreen;
+        font-family: montserrat-light;
+        font-size: @font-size-default;
+        transition: all .1s ease-in-out;
+        box-shadow: 0 0 5px @color-grey1;
+
+        .background{
+            background-color: @color-grey4;
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            z-index: 1;
+            opacity: .2;
+            transition: opacity .25s ease-in-out;
+        }
+
+        .icon {
+            height: 25px;
+            width: 25px;
+            color: @color-lightBlueGreen;
+            margin-right: @spacing-mid;
+        }
+        &:hover{
+            transform: scale(1.02);
+            color: @color-lightBlueGreen;
+            opacity: 1;
+            box-shadow: 0 0 40px rgba(0,0,0,0.5);
+            .background{
+                opacity: .3;
+            }
+        }
+    }
+
+    .section {
+        max-width: 800px;
+        align-self: center;
+        flex-direction: column;
+
+    }
+
+    .skillsContainer{
+        margin-top: @spacing-xlarge;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        .section {
+            max-width: 600px;
+            .wideImage {
+                width: 600px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+    .container {
+        .section {
+            max-width: 800px;
+            .wideImage {
+                width: 800px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .container {
+        .section {
+            max-width: 350px;
+            .wideImage {
+                width: 350px;
+            }
+        }
+    }
+}

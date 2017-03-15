@@ -1,0 +1,30 @@
+import React, {Component} from 'react';
+import styles from './styles.less';
+
+export default class Code extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <div className={styles.container}>
+                <div className={styles.flexContainer}>
+                    <div className={styles.item}>
+                        <h2>Portfolio (React)</h2>
+                        <p>You can see all the source files for this website. </p>
+                        <a target="blank" href="https://gitlab.com/heathornhawk/Portfolio">View Project</a>
+                    </div>
+                    <div className={styles.item}>
+                        <h2>Weather App (Angular 1)</h2>
+                        <p>
+                            I was asked by a company to build a weather app as a part of my interview process. Here it is...
+                        </p>
+                        <a href="https://gitlab.com/heathornhawk/weather-app">View Project</a>
+                    </div>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </div>
+            </div>
+        );
+    }
+}

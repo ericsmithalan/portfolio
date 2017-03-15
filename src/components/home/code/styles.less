@@ -1,0 +1,48 @@
+@import '../../../common/styles/colors';
+@import '../../../common/styles/spacing';
+@import '../../../common/styles/fonts';
+
+.container{
+    position:relative;
+    z-index: 1;
+
+    .flexContainer{
+        display: flex;
+        flex:1 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        align-self: center;
+
+        .item{
+            width: 800px;
+            align-content: left;
+            border-top: 1px solid @color-grey3;
+
+            h2{
+                font-family: montserrat-light;
+                color: @color-grey7;
+                position:relative;
+            }
+            p{
+                font-family: montserrat-light;
+                color: @color-grey6;
+                font-size: @font-size-h5;
+                line-height: @font-size-h3;
+                display: block;
+                margin-bottom: @spacing-large;
+            }
+
+            a{
+                font-family: montserrat-light;
+                color: @color-lightBlueGreen;
+                font-size: @font-size-h6;
+                display: block;
+                margin-bottom: @spacing-large;
+            }
+        }
+
+    }
+   
+}

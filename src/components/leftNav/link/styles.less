@@ -1,0 +1,99 @@
+@import '../../../common/styles/colors';
+@import '../../../common/styles/spacing';
+@import '../../../common/styles/fonts';
+
+.container{
+    display: flex;
+    position:relative;
+    flex-direction: row;
+    padding: @spacing-large;
+    padding-left:@spacing-xlarge;
+    margin-bottom:1px;
+    z-index: 2;
+    white-space: nowrap;
+    overflow: hidden;
+    color: @color-grey7;
+    transition: background .25s ease-in-out;
+    min-height: 30px;
+
+    .mdIcon{
+        display: block;
+        width:25px;
+        height:25px;
+        position:relative;
+        z-index: 2;
+        min-width:25px;
+        min-height:25px;
+        margin-right:@spacing-large;
+    }
+    .icon{
+        position:relative;
+        z-index: 2;
+        margin-right:@spacing-large;
+        background-image: url('images/spritesheet_logo_icons.png'); 
+        background-repeat: no-repeat;
+        display: block;
+        width:25px;
+        height:25px;
+        min-width:25px;
+        min-height:25px;
+    }
+    .text{
+        position:relative;
+        z-index: 2;
+        color: @color-grey7;
+        font-family: montserrat-light;
+        font-size: @font-size-default;
+        display: flex;
+        flex-direction: row;
+        flex:1;
+        align-items: center;
+        
+        .title{
+            display: flex;
+            flex:1;
+        } 
+        .year{
+            display: flex;
+            color: @color-grey4;
+        }
+    }
+
+    .background{
+        background-color: transparent;
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index: 1;
+        opacity: .2;
+    }
+    &:hover{
+        color: @color-grey7;
+        background: @color-grey2;
+        .background{
+            opacity:.1
+        }
+    }
+
+    &.active{
+        color: @color-grey5;
+        background-color: @color-grey1;
+        .background{
+            opacity:.1
+        }
+    }
+
+    &.notReady{
+        opacity: .3;
+        &:hover{
+            opacity: 1;
+            color: @color-grey7;
+            background: @color-grey2;
+            .background{
+                opacity:.1
+            }
+        }
+    }
+}

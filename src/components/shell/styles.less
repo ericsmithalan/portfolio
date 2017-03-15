@@ -1,0 +1,30 @@
+@import '../../common/styles/fonts';
+@import '../../common/styles/colors';
+@import '../../common/styles/spacing';
+
+html,body{
+    padding:0;
+    margin:0;
+    height:100%;
+    font-family: montserrat-light;
+    font-size: 16px;
+    background-color: @color-grey2;
+    background-image: url('images/background.png');
+}
+
+.shell{
+    display: flex;
+    flex:1 1 100%;
+    position: relative;
+    flex-direction: row;
+    padding-bottom: 5em;
+   
+    .container{
+        display: flex;
+        flex:1 1 100%;
+        .projectOverlay{
+            position:absolute;
+        }
+    }
+    
+}

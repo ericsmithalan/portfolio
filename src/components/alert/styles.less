@@ -1,0 +1,65 @@
+@import '../../common/styles/colors';
+@import '../../common/styles/spacing';
+@import '../../common/styles/fonts';
+
+.container{
+    position: fixed;
+    bottom: -400px;
+    right: 20px;
+    left: 20px;
+    z-index: 999999;
+    padding: @spacing-xlarge;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 0 10px @color-grey2;
+    visibility: 0;
+    transition: bottom .5s ease-in-out, visibility .5s ease-in-out;
+    justify-content: space-between;
+    
+    .close{
+        position: relative;
+        z-index: 3;
+        color: @color-grey9;
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+        display: block;
+    }
+
+    .info{
+        position: relative;
+        z-index: 3;
+        color: @color-grey9;
+        height: 40px;
+        width: 40px;
+        font-size: 40px;
+        margin-right: @spacing-mid;
+    }
+
+    .text{
+        position: relative;
+        z-index: 3;
+        color: @color-grey9;
+        font-family: montserrat-light;
+        font-size: @font-size-h5;
+        line-height:  @font-size-h3;
+        margin-right: @spacing-xlarge;
+    }
+
+    .background{
+        background:@color-blueGreen;
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index: 1;
+        opacity: .98;
+    }
+
+    &.active{
+        visibility: 1;
+        bottom: 20px;
+    }
+}

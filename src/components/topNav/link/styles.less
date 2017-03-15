@@ -1,0 +1,123 @@
+@import '../../../common/styles/colors';
+@import '../../../common/styles/spacing';
+@import '../../../common/styles/fonts';
+
+.navLink{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    display: -webkit-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    width: 110px;
+    margin: 5px;
+    color: @color-lightBlueGreen;
+    font-family: montserrat-light;
+    font-size: @font-size-default;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    box-shadow: 0 0 5px @color-grey1;
+
+    .background{
+        background-color: @color-grey5;
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index: 1;
+        opacity: .1;
+        transition: opacity .25s ease-in-out;
+    }
+    .image{
+        position: relative;
+        z-index: 2;
+    }
+    .title{
+         position: relative;
+        z-index: 2;
+    }
+
+
+    
+    &:hover{
+        transform: scale(1.02);
+        color: @color-lightBlueGreen;
+        opacity: 1;
+        box-shadow: 0 0 40px rgba(0,0,0,0.5);
+        .background{
+             opacity: .3;
+        }
+    }
+}
+.navLinkSelected{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    width: 110px;
+    margin: 5px;
+    font-family: montserrat-light;
+    font-size: @font-size-default;
+    cursor: pointer;
+    transition: background .25s ease-in-out, color .25s ease-in-out;
+    background: @color-lightBlueGreen;
+    color: @color-grey2;
+
+    .background{
+        background-color: @color-grey1;
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index: 1;
+        opacity: .1;
+    }
+
+    &:hover{
+        color: @color-grey2
+    }
+}
+
+.navLink:not(:last-child){
+    border-right: 1px solid @color-grey1
+}
+
+.image{
+    width: 30px;
+    height: 30px;
+}
+
+
+@media screen and (max-width: 758px){
+    .navLink{
+        height: 45px;
+        width: 45px;
+        margin: 5px;
+        .image{
+            
+        }
+        .title{
+           display: none;
+        }
+    }
+    .navLinkSelected{
+        height: 45px;
+        width: 45px;
+        margin: 5px;
+        .image{
+            
+        }
+        .title{
+           display: none;
+        }
+    }
+}

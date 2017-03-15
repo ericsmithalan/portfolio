@@ -1,0 +1,170 @@
+@import '../../../common/styles/colors';
+@import '../../../common/styles/spacing';
+@import '../../../common/styles/fonts';
+
+.container{
+    display: flex;
+    flex:1;
+    align-items: center;
+    flex-direction: column;
+    flex:1;
+
+    .section{
+        max-width: 900px;
+
+        .downloadContainer{
+            display: flex;
+            flex-direction: row;
+       
+            .downloadLink{
+                position:relative;
+                display: block;
+                color: @color-lightBlueGreen;
+                padding: @spacing-large;
+                display: flex;
+                flex-direction: row;
+                margin-bottom:1px;
+                box-shadow: 0 0 5px @color-grey2;
+                transition: all .1s ease-in-out;
+                margin-right: @spacing-large;
+
+                .background{
+                    background-color: @color-grey4;
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    right:0;
+                    bottom:0;
+                    z-index: 1;
+                    opacity: .1;
+                }
+
+                .icon{
+                    height: 25px;
+                    width: 25px;
+                    color: @color-lightBlueGreen;
+                    margin-right: @spacing-mid;
+                }
+
+                .text{
+
+                }
+
+                &:hover{
+                    transform: scale(1.02);
+                    opacity: 1;
+                    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+
+                    .background{
+                        opacity: .3;
+                    }
+                }
+
+            }
+        }
+
+        .images{
+            display: flex;
+            flex-direction: row;
+            margin-bottom:@spacing-large;
+            justify-content: space-between;
+
+            img{
+                width: 48%;
+            }
+        }
+
+        h3{
+            font-family: montserrat-light;
+            color: @color-grey9;
+            font-size: @font-size-h4;
+            margin-bottom: @spacing-large;
+            margin-top: @spacing-xlarge;
+        }
+        p{
+            font-family: montserrat-light;
+            color: @color-grey6;
+            font-size: @font-size-h5;
+            line-height: @font-size-h3;
+            display: block;
+            margin-bottom: @spacing-large;
+        }
+       
+        .spacer{
+            height: 1.2em;
+        }
+        .list{
+            list-style-type: circle;
+
+            li{
+                font-family: montserrat-light;
+                color: @color-grey6;
+                font-size: @font-size-h5;
+                line-height: @font-size-h3;
+                margin-left: @spacing-xlarge;
+                margin-bottom: @spacing-large;
+                padding-left:@spacing-mid;
+            }
+        }
+
+        .wideImage{
+            height: 250px;
+            clip-path: border-box;
+            width:900px;
+            overflow: hidden;
+
+            img{
+                 width: 900px;
+            }
+            
+            margin-top: @spacing-xlarge;
+            padding-top: @spacing-xlarge;
+            margin-bottom: @spacing-xlarge;
+        }
+
+        .skills{
+            margin-bottom: @spacing-xlarge;
+            padding-bottom: @spacing-xlarge;
+        }
+
+    }
+
+    .section:not(:first-of-type){
+        margin-top: @spacing-xlarge;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        .section{
+            max-width: 600px;
+            .wideImage{
+                width: 600px;
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) { 
+    .container{
+        .section{
+            max-width: 800px;
+            .wideImage{
+                width: 800px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px){
+    .container{
+        .section{
+            max-width: 350px;
+            .wideImage{
+                width: 350px;
+            }
+        }
+    }
+}

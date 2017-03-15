@@ -1,0 +1,155 @@
+@import '../../../common/styles/colors';
+@import '../../../common/styles/spacing';
+@import '../../../common/styles/fonts';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: @spacing-large;
+    box-shadow: 0 0 5px @color-grey2;
+    margin: @spacing-small;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all .25s ease-in-out;
+    
+    .bar{
+        display: flex;
+        flex:1 0 auto;
+        flex-direction: row;
+        border-left: 5px solid @color-blue;
+        align-items: center;
+    }
+
+    &.one{
+        .bar{
+            border-color:@color-red;
+        }
+    }
+    &.two{
+        .bar{
+            border-color: @color-yellow;
+        }
+    }
+    &.three{
+        .bar{
+            border-color:@color-blue;
+        }
+    }
+
+    .background{
+        background: @color-grey4;
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index: 1;
+        opacity: .2;
+        transition: all .25s ease-in-out;
+    }
+     &:hover{
+        transform: scale(1.02);
+        box-shadow: 0 0 40px rgba(0,0,0,0.5);
+        .background{
+            opacity:.3;
+        }
+    }
+
+    .image{
+        width: 50px;
+        height:50px;
+        margin-left: @spacing-xlarge;
+        margin-right: @spacing-large;
+        background-image: url('images/spritesheet.png'); 
+        background-repeat: no-repeat;
+        display: block;
+    }
+
+    &.iconSize{
+        width: 65px;
+        height: 65px;
+        min-width: 65px;
+        max-width: 65px;
+        justify-content: center;
+        align-items: center;
+        padding:0;
+
+        .image{
+            width: 50px;
+            height:50px;
+            margin: 0;
+        }
+    }
+
+    &.smallSize{
+        width: 85px;
+        height: 85px;
+        min-width: 85px;
+        max-width: 85px;
+        justify-content: center;
+        align-items: center;
+        padding:0;
+
+        .title{
+            font-family: montserrat-regular;
+            color: @color-grey6;
+            font-size: @font-size-small;
+            margin-top: @spacing-mid;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 75px;
+            text-align: center;
+
+        }
+
+        .image{
+            width: 50px;
+            height:50px;
+            margin: 0;
+        }
+    }
+
+    .contentContainer{
+        .title{
+            font-family: montserrat-regular;
+            color: @color-grey7;
+            font-size: @font-size-h6;
+            line-height: @font-size-h5;
+            margin-bottom: @spacing-xsmall;
+        }
+        .experience{
+            font-family: montserrat-thin;
+            color: @color-grey7;
+            font-size: @font-size-h6;
+            opacity: 0.7;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        width: 300px;
+        min-width: 300px;
+        max-width: 300px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) { 
+    .container{
+        width: 250px;
+        min-width: 250px;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .container{
+        width: 330px;
+        min-width: 330px;
+        max-width: 330px;
+    }
+}

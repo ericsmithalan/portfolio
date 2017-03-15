@@ -1,0 +1,69 @@
+@import '../../../common/styles/colors';
+@import '../../../common/styles/spacing';
+@import '../../../common/styles/fonts';
+
+.container{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: @spacing-xlarge;
+   
+    .keys{
+        display: flex;
+        flex:1;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .key{
+            display: flex;
+            flex-direction: row;
+
+            .text{
+                font-family: montserrat-thin;
+                color: @color-grey7;
+                font-size: @font-size-h5;
+                margin-left: @spacing-mid;
+                margin-right: @spacing-xlarge;
+            }
+
+            .boxBeginner{
+                height: 20px;
+                width: 5px;
+                background: @color-red;
+            }
+            .boxAverage{
+                height: 20px;
+                width: 5px;
+                background: @color-yellow;
+            }
+            .boxExpert{
+                height: 20px;
+                width: 5px;
+                background: @color-blue;
+            }
+        }
+
+    }
+    .notes{
+        font-family: montserrat-thin;
+        color: @color-red;
+        font-size: @font-size-default;
+        display: flex;
+        flex:1;
+        flex-direction: row;
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        max-width: 600px;
+        text-align: center;
+        align-self: center;
+        margin-top: @spacing-xlarge;
+        margin-bottom: @spacing-xlarge;
+        line-height: @font-size-h5;
+        display: none;
+    }
+}
+

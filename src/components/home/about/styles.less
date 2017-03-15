@@ -1,0 +1,65 @@
+@import '../../../common/styles/colors';
+@import '../../../common/styles/spacing';
+@import '../../../common/styles/fonts';
+
+.container{
+    display: flex;
+    flex:1;
+    align-items: center;
+    flex-direction: column;
+    flex:1;
+
+    .section{
+        max-width: 900px;
+        .spacer{
+            height: 1.2em;
+        }
+
+        .images{
+            display: flex;
+            flex-direction: row;
+            margin-bottom:@spacing-large;
+            justify-content: space-between;
+        }
+
+        h3{
+            font-family: montserrat-light;
+            color: @color-grey9;
+            font-size: @font-size-h4;
+            margin-bottom: @spacing-large;
+            margin-top: @spacing-xlarge;
+        }
+        p{
+            font-family: montserrat-light;
+            color: @color-grey6;
+            font-size: @font-size-h5;
+            line-height: @font-size-h3;
+            display: block;
+            margin-bottom: @spacing-large;
+        }
+    }
+
+    .section:not(:first-of-type){
+        margin-top: @spacing-xlarge;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        .section{
+            max-width: 600px;
+            padding:@spacing-xlarge;
+        }
+    }
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) { 
+    .container{
+        .section{
+            max-width: 800px;
+            padding:@spacing-xlarge;
+        }
+    }
+}

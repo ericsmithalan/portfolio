@@ -1,0 +1,46 @@
+@import '../../../common/styles/colors';
+@import '../../../common/styles/spacing';
+@import '../../../common/styles/fonts';
+
+.container{
+    position:relative;
+    z-index: 1;
+   
+    .flexContainer{
+        display: flex;
+        flex:1 0 auto;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        position: relative;
+
+        .cards{
+            position:relative;
+            display: flex;
+            flex:1 0 auto;
+            flex-direction: 'row';
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        h2{
+            font-family: montserrat-thin;
+            color: @color-lightBlueGreen;
+            font-size: @font-size-h1;
+            padding-top: @spacing-mid;
+            text-align: center;
+            position:relative;
+        }
+        .description{
+            display: inline-block;
+            font-family: montserrat-thin;
+            color:@color-grey7;
+            font-size: @font-size-h6;
+            text-align: center;
+            max-width: 600px;
+            align-self: center;
+            margin-bottom: @spacing-xlarge;
+            line-height: @font-size-h4;
+            justify-content: center;
+        }
+    }
+}

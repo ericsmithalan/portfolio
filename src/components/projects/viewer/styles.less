@@ -1,0 +1,129 @@
+@import '../../../common/styles/colors';
+@import '../../../common/styles/spacing';
+@import '../../../common/styles/fonts';
+
+
+.container{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    position:absolute;
+    z-index: 10;
+    opacity: 0;
+    animation: viewerAnimation;
+    animation-duration: .3s; 
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-timing-function: ease-out; 
+    animation-fill-mode: both; 
+    animation-delay: .05s;
+    transition: height .3s ease-out;
+    flex:1;
+
+    .content{
+        display: flex;
+        flex:1;
+        margin-top:30px;
+        z-index: 2;
+        flex-direction: row;
+        overflow: auto;
+        position: relative;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        border-top:1px solid @color-lightBlueGreen;
+        padding: @spacing-xlarge;
+        overflow: auto;
+      
+        .background{
+            background: @color-grey1;
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            z-index: 1;
+            opacity: .4;
+            transition: opacity .25s ease-in-out;
+        }
+
+        .imageContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin-top: 40px;
+            overflow: hidden;
+            z-index: 3;
+            transition: all .25s ease-in-out;
+            overflow:hidden;
+            min-width: 300px;
+            max-width: 300px;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          
+            .image{
+                max-width: 400px;
+            }
+
+            .description{
+                margin-top:@spacing-mid;
+                font-family: montserrat-light;
+                font-size: @font-size-default;
+                color: @color-grey6;
+                line-height: 1.6em;
+            }
+
+            .imageBackground{
+                background: @color-grey4;
+                position: absolute;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                z-index: 1;
+                opacity: 0;
+                transition: opacity .25s ease-in-out;
+            }
+
+            &:not(:last-of-type){
+                margin-right:@spacing-xlarge;
+            }
+
+            &:hover{
+                overflow:hidden;
+                transform: scale(1.04);
+                .background{
+                    opacity: .2;
+                }
+            }
+        }
+    }
+    .arrowIcon{
+        position:absolute;
+        top:10px;
+        left: 0;
+        height: 20px;
+        width:20xp;
+        transition: left .25s ease-in-out;
+        z-index: 3;
+    }
+}
+
+@keyframes viewerAnimation {
+  0%   { 
+      transform: scale(0);
+      opacity: 0; 
+      }
+  100% { 
+      transform: scale(1);
+      opacity: 1; 
+      }
+}
+@keyframes viewerAnimationClose {
+  0%   { 
+      transform: scale(1);
+      opacity: 1; 
+      }
+  100% { 
+      transform: scale(0);
+      opacity: 0; 
+      }
+}

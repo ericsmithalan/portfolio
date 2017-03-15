@@ -1,0 +1,89 @@
+@import '../../../common/styles/colors';
+@import '../../../common/styles/spacing';
+@import '../../../common/styles/fonts';
+
+
+.container{
+    position:absolute;
+    left:0;
+    right:0;
+    z-index: 999999;
+
+    .content{
+        position:absolute;
+        left:20px;
+        right:20px;
+        top: 20px;
+        bottom: 100px;
+        z-index: 10;
+        overflow: auto;
+
+        img{
+            max-width: 1200px;
+            margin: auto;
+        }
+    }
+
+    .thumbsContainer{
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+        height: 100px;
+        position:absolute;
+        left:0;
+        right:0;
+        bottom:0;
+        background: @color-grey3;
+        overflow: auto;
+
+        .imageContainer{
+            display: block;
+            clip-path: view-box;
+            max-height:80px;
+            max-width:80px;
+            min-height:80px;
+            min-width:80px;
+            margin:@spacing-small;
+            overflow: hidden;
+
+            .smallImage{
+                max-width: 80px;
+            }
+        }
+        
+    }
+    
+    
+    .background{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background: @color-grey1;
+        opacity: .98;
+        z-index: 1;
+    }
+}
+
+@keyframes viewerAnimation {
+  0%   { 
+      transform: scale(0);
+      opacity: 0; 
+      }
+  100% { 
+      transform: scale(1);
+      opacity: 1; 
+      }
+}
+@keyframes viewerAnimationClose {
+  0%   { 
+      transform: scale(1);
+      opacity: 1; 
+      }
+  100% { 
+      transform: scale(0);
+      opacity: 0; 
+      }
+}

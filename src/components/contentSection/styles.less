@@ -1,0 +1,58 @@
+@import '../../common/styles/colors';
+@import '../../common/styles/spacing';
+@import '../../common/styles/fonts';
+
+.container{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid @color-grey3;
+    margin-top:@spacing-xlarge;
+    padding-top:@spacing-xlarge;
+
+    .title{
+        margin-top: @spacing-large;
+        max-width: 900px;
+        font-family: montserrat-thin;
+        color: @color-lightBlueGreen;
+        font-size: @font-size-h1;
+    }
+    .paragraph{
+        max-width: 900px;
+        font-family: montserrat-light;
+        color: @color-grey6;
+        line-height: @font-size-h3;
+        font-size: @font-size-h5;
+        text-align: center;
+        margin-top:@spacing-xlarge;
+        margin-bottom: @spacing-xlarge;
+        padding-bottom: @spacing-xlarge;
+    }
+    .spacer{
+        margin-bottom: @spacing-xlarge;
+        padding-bottom: @spacing-large;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        .paragraph{
+           padding-left:@spacing-xlarge;
+           padding-right: @spacing-xlarge;
+        }
+    }
+}
+
+@media screen and (max-width: 414px){
+    .container{
+        .title{
+            font-size: @font-size-h3;
+        }
+
+        .paragraph{
+            font-size: @font-size-h6;
+        }
+    }
+}

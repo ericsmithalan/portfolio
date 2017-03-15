@@ -1,0 +1,188 @@
+@import '../../../common/styles/colors';
+@import '../../../common/styles/spacing';
+@import '../../../common/styles/fonts';
+
+.container{
+    display: flex;
+    flex:0 1 auto;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    
+    .title{
+        position: relative;
+        font-family: montserrat-thin;
+        color: @color-grey7;
+        font-size: @font-size-xlarge;
+        align-self: center;
+        transition: opacity .25s;
+        animation-name: titleAnimation;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-timing-function: ease-out;
+        animation-fill-mode: both;
+        animation-delay: .10s;
+    }
+
+    .subTitle{
+        position: relative;
+        font-family: montserrat-thin;
+        color:@color-lightBlueGreen;
+        font-size: @font-size-h1;
+        align-self: center;
+        margin-bottom: @spacing-xlarge;
+        text-align: center;
+        transition: opacity .25s;
+        opacity:0;
+        margin-top:@spacing-mid;
+        animation-name: subTitleAnimation;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-timing-function: ease-out;
+        animation-fill-mode: both;
+        animation-delay: .10s;
+        
+    }
+    .experience{
+        font-family: montserrat-thin;
+        color:@color-grey7;
+        font-size: @font-size-h5;
+        margin-top:@spacing-xlarge;
+        line-height: @font-size-h3;
+        align-self: center;
+        text-align: center;
+        max-width: 900px;
+        opacity: 0;
+        position: relative;
+
+        animation-name: experienceAnimation;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-timing-function: ease-out;
+        animation-fill-mode: both;
+        animation-delay: .5s;
+
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+        position: absolute;
+        left: 0;
+        bottom: -120px;
+        right: 0;
+        height: 120px;
+        transition: bottom .25s;
+        align-items: center;
+        justify-content: center;
+
+        
+        .arrow{
+            display: block;
+            width: 70px;
+            height: 70px;
+            background-repeat: no-repeat;
+            align-self: center;
+        }
+
+    }
+}
+
+
+
+@keyframes subTitleAnimation {
+  0%   { 
+      transform: scale(0);
+      opacity: 0; 
+      }
+  50% { 
+      transform: scale(.5);
+      opacity: 1; 
+      }
+  100% { 
+      transform: scale(1);
+      opacity: 1; 
+      }
+}
+
+@keyframes titleAnimation {
+  0%   { 
+      transform: scale(0);
+      opacity: 0; 
+      }
+  50% { 
+      transform: scale(.5);
+      opacity: 1; 
+      }
+  100% { 
+      transform: scale(1);
+      opacity: 1; 
+      }
+}
+
+@keyframes experienceAnimation {
+  0%   { 
+      opacity: 0; 
+      bottom: -500px;
+      }
+  100% { 
+      opacity: 1; 
+      bottom: 0px;
+      }
+}
+
+
+@media screen and (max-width: 1024px){
+    .container{
+        .experience{
+           padding-left:@spacing-xlarge;
+           padding-right: @spacing-xlarge;
+        }
+    }
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) { 
+    .container{
+        .experience{
+           padding-left:@spacing-xlarge;
+           padding-right: @spacing-xlarge;
+        }
+    }
+}
+
+@media screen and (max-width: 651px){
+    .container{
+        .title{
+            font-size: @font-size-h1;
+        }
+        .subTitle{
+            font-size: @font-size-h3;
+        }
+        .experience{
+            font-size: @font-size-h6;
+        }
+    }
+}
+
+@media screen and (max-width: 414px){
+    .container{
+        .title{
+            font-size: @font-size-h1;
+        }
+
+        .subTitle{
+            font-size: @font-size-h3;
+        }
+        .experience{
+            font-size: @font-size-h6;
+        }
+    }
+}
