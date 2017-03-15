@@ -4,12 +4,18 @@ This is the source code to my portfolio site. Please feel free to provide any fe
 My portfolio:
 [http://ericsmithportfolio.com](http://ericsmithportfolio.com)
 
-## Requirements
-Make sure you have [Node.js](http://nodejs.org/)
-
+## Development
 ```sh
 cd portfolio
 npm install
 npm start
 ```
 Your app should now be running on [localhost:3001](http://localhost:3001).
+
+## Production
+
+```sh
+cd portfolio
+npm run prod
+```
+all files will be coppied into your dist folder.
