@@ -92,7 +92,8 @@
         max-width: 800px;
         align-self: center;
         flex-direction: column;
-
+        margin-left: @spacing-xlarge;
+        margin-right: @spacing-xlarge;
     }
 
     .skillsContainer{
@@ -103,34 +104,17 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 758px){
     .container {
-        .section {
-            max-width: 600px;
-            .wideImage {
-                width: 600px;
-            }
-        }
-    }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
-    .container {
-        .section {
-            max-width: 800px;
-            .wideImage {
-                width: 800px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 414px) {
-    .container {
-        .section {
-            max-width: 350px;
-            .wideImage {
-                width: 350px;
+        .button{
+            height: 45px;
+            width: 45px;
+            margin: 5px;
+             .icon {
+                 margin:0;
+             }
+            .text{
+                display: none;
             }
         }
     }
