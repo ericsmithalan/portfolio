@@ -39,13 +39,29 @@
                 margin-bottom: @spacing-large;
             }
 
-            a{
-                font-family: montserrat-light;
-                color: @color-lightBlueGreen;
-                font-size: @font-size-h6;
-                display: block;
-                margin-bottom: @spacing-large;
+            .linkContainer{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: @spacing-xlarge;
+
+                .githubIcon{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: @spacing-large;
+                    opacity: .8;
+                }
+
+                a{
+                    display: flex;
+                    font-family: montserrat-light;
+                    color: @color-lightBlueGreen;
+                    font-size: @font-size-h6;
+                    display: block;
+                    align-self: center;
+                }
             }
+            
         }
 
     }

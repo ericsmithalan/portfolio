@@ -9,7 +9,8 @@ export default class Skills extends Component {
         size: React.PropTypes.string.isRequired,
         data: React.PropTypes.object,
         legend: React.PropTypes.bool,
-        category: React.PropTypes.string
+        category: React.PropTypes.string,
+        ids: React.PropTypes.array
     }
 
     constructor(props) {
@@ -58,16 +59,22 @@ export default class Skills extends Component {
     }
 
     _render() {
-        console.log(this.props.category)
-        if (this.props.category !== 'all') {
-            return this.state.skills.filter(skill => skill.category === this.props.category).map((skill, index) => {
+        if (typeof this.props.ids !== 'undefined') {
+            return this.state.skills.filter(skill => this.props.ids.indexOf(skill.id) !== -1).map((skill, index) => {
                 return <Skill size={this.props.size} key={index} index={index} data={skill} />
             })
         }
-        else{
-            return this.state.skills.map((skill, index) => {
-                return <Skill size={this.props.size} key={index} index={index} data={skill} />
-            })
+        else {
+            if (this.props.category !== 'all') {
+                return this.state.skills.filter(skill => skill.category === this.props.category).map((skill, index) => {
+                    return <Skill size={this.props.size} key={index} index={index} data={skill} />
+                })
+            }
+            else{
+                return this.state.skills.map((skill, index) => {
+                    return <Skill size={this.props.size} key={index} index={index} data={skill} />
+                })
+            }
         }
     }
 
