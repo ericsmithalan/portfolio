@@ -1,5 +1,3 @@
-
-
 import appAction from './app';
 import leftNavAction from './leftNav';
 import projectAction from './projects';

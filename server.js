@@ -17,10 +17,10 @@ app.use(webpackDevMiddleware(compiler, {
 }))
 app.use(webpackHotMiddleware(compiler))
 
-// app.use('/styles.css', function (req, res) {
-//     res.set('Content-Type', 'text/css')
-//     res.sendFile(path.join(__dirname, '/dist/styles.css'))
-// })
+app.use('/styles.css', function (req, res) {
+    res.set('Content-Type', 'text/css')
+    res.sendFile(path.join(__dirname, '/dist/styles.css'))
+})
 
 app.use('/graphImage.png', function (req, res) {
   res.sendFile(path.join(__dirname, '/dist/graphImage.png'))

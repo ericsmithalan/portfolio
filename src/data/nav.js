@@ -49,13 +49,6 @@ export default {
     },
   ],
   project: [
-        // {
-        //     href: 'javascript:void(0)',
-        //     to: '/home',
-        //     image: MdArrowBack,
-        //     title: 'back',
-        //     scrollTo: null
-        // },
     {
       href: 'javascript:void(0)',
       to: null,

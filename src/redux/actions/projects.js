@@ -1,5 +1,3 @@
-
-
 import { actionTypeConstants } from '../../common/constants/';
 
 function setSelectedProjectElementId(value) {

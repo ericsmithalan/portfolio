@@ -1,5 +1,4 @@
-
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import styles from './styles.less';
 import Audiencescience from './audiencescience';
 import Bcentral from './bcentral';
@@ -23,37 +22,37 @@ export default class ProjectDetails extends Component {
     render() {
         switch (this.props.data.id) {
             case 'audiencescience':
-                return <Audiencescience />
+                return <Audiencescience/>
                 break;
             case 'bcentral':
-                return <Bcentral />
+                return <Bcentral/>
                 break;
             case 'funstuff':
-                return <Funstuff />
+                return <Funstuff/>
                 break;
             case 'officelive':
-                return <Officelive />
+                return <Officelive/>
                 break;
             case 'healthvault':
-                return <Healthvault />
+                return <Healthvault/>
                 break;
             case 'moonlighting':
-                return <Moonlighting />
+                return <Moonlighting/>
                 break;
             case 'audiencescience':
-                return <Officelive />
+                return <Officelive/>
                 break;
             case 'tools':
-                return <Tools />
+                return <Tools/>
                 break;
             case 'urbanearth':
-                return <Urbanearth />
+                return <Urbanearth/>
                 break;
             case 'valueappeal':
-                return <Valueappeal />
+                return <Valueappeal/>
                 break;
-             case 'navy':
-                return <Navy />
+            case 'navy':
+                return <Navy/>
                 break;
         }
     }

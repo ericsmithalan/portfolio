@@ -1,5 +1,4 @@
-
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import styles from './styles.less';
 
 export default class ProjectDetails extends Component {
@@ -10,7 +9,7 @@ export default class ProjectDetails extends Component {
   render() {
     return (
       <div className={styles.container}>
-        <div className={styles.section} />
+        <div className={styles.section}/>
       </div>
     );
   }
