@@ -20,10 +20,10 @@
         left:0;
         flex:1;
         width:0;
+        padding-top: 5.4em;
         flex-direction: column;
-        margin-top: 5.4em;
         overflow: auto;
-        transition: width .4s ease-in-out;
+        transition: all .4s ease-in-out;
         z-index: 2;
         overflow: auto;
         padding-bottom: @spacing-xlarge;
@@ -60,7 +60,7 @@
             left:0;
             flex:1;
             flex-direction: column;
-            margin-top: 5.4em;
+            padding-top: 5.4em;
             overflow: auto;
         }
     }
@@ -77,6 +77,7 @@
             }
 
             .navigation{
+                box-shadow: 0 0 40px rgba(0,0,0,0.7);
                 width:280px;
                 position: fixed;
                 top:0;
@@ -84,7 +85,6 @@
                 left:0;
                 flex:1;
                 flex-direction: column;
-                margin-top: 5.4em;
                 overflow: auto;
                 background: @color-grey2;
                 z-index: 99999;
