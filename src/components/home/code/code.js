@@ -23,7 +23,7 @@ export default class Code extends Component {
                             legend={false}
                             ategory='all'
                             size='small'
-                            ids={['react','redux', 'es6', 'webpack', 'babel', 'html', 'css', 'javascript', 'less', 'photoshop', 'affinitydesigner', 'git']} />
+                            ids={['react','npm', 'redux', 'es6', 'webpack', 'babel', 'html', 'css', 'javascript', 'less', 'photoshop', 'affinitydesigner', 'git']} />
                     </div>
                     <div className={styles.item}>
                         <h4>Weather App - Angular 1</h4>
@@ -38,9 +38,9 @@ export default class Code extends Component {
                             legend={false}
                             ategory='all'
                             size='small'
-                            ids={['angular','grunt', 'html', 'css', 'javascript', 'sass', 'bower', 'sketch', 'git']} />
+                            ids={['angular', 'npm','grunt', 'html', 'css', 'javascript', 'sass', 'bower', 'sketch', 'git']} />
                     </div>
-                    
+
                     <br/><br/><br/><br/><br/><br/><br/><br/>
                 </div>
             </div>
