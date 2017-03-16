@@ -30,7 +30,7 @@ export default {
       href: 'javascript:void(0)',
       to: null,
       image: MdCode,
-      title: 'code',
+      title: 'examples',
       scrollTo: 'codeContainer',
     },
     {

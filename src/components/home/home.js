@@ -35,7 +35,7 @@ export default class Home extends Component {
                 </div>
                 <div id='codeContainer'>
                     <ContentSection
-                        title='Code'
+                        title='Working Examples'
                         paragraph='These are some projects that I am putting out there for the world to see. Please feel free to provide any feedback!.'
                     />
                     <Code />
