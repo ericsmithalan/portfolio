@@ -71,7 +71,7 @@ export default class Code extends Component {
                     <div className={styles.item}>
                         <h4>Ghost - WPF</h4>
                         <p>
-                            This was an application I built because I hated redlining my designs! 
+                            This was an application I built because I hate redlining my designs! 
                             I still use this app when I'm working on a windows machine.
                         </p>
                         <div className={styles.linkContainer}>
@@ -87,14 +87,13 @@ export default class Code extends Component {
                     <div className={styles.item}>
                         <h4>HVCC - WPF Prototype</h4>
                         <p>
-                            This was my attempt at extending Ghost in a way that could be used with a
-                            prototype. Developers installed this application and used it to guide them
-                            through the UI. They also used it to verify their work to make sure it matched
-                            the design EXACTLY! 
+                            This is an Prototype application that I built and gave to developers. It was
+                            used as a tool to help them build the application components and to see how
+                            the application should work. 
                         </p>
                         <p>
-                            Prototypes with this level of realism were unheard of back
-                            in the day. I had built a few of these that were used in usability studies. This is just one example.
+                            Prototypes with this level of realism were unheard of back in the day. I had 
+                            built a few like this that were used in usability studies.
                         </p>
                         <div className={styles.linkContainer}>
                             <a href={require('downloads/HVCC.zip')}>Download Application (Windows Only)</a>

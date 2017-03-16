@@ -17,7 +17,9 @@ export default class ProjectDetails extends Component {
             much on their property taxes. Users could then sign up for the service and get
             all the necessary paperwork to appeal their property taxes.
           </p>
+
           <h3>My Responsibilities</h3>
+
           <p>
             In 2011 I was hired at ValueAppeal to be a UI Developer and UX Designer. I
             started out by working on the existing website where I had to redesign a few
@@ -50,11 +52,12 @@ export default class ProjectDetails extends Component {
             examples of this in the Tools, Moonlighting, and Fun Stuff sections of this
             website.
           </p>
+
           <p>
             After getting the live prototype working, we all collaborated further and ended
             up creating a pretty slick product. I think it's important to note that many of
             my initial ideas were expanded upon by other team members. They also added new
-            ideas of their own and together we built a pretty slick product.
+            ideas of their own and together we built and shipped the final product.
           </p>
 
           <p>
@@ -64,12 +67,6 @@ export default class ProjectDetails extends Component {
             in 2012.
           </p>
 
-          <p>
-            Today, many companies are seeing the value in having a product start out as a
-            prototype and having it end in shippable code. It's a process that bridges the
-            gap between UX Design and Development. In return, the turnaround time is much
-            faster and the results are much better.
-          </p>
         </div>
       </div>
     );

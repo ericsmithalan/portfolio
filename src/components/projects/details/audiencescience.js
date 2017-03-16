@@ -39,19 +39,16 @@ export default class ProjectDetails extends Component {
             it. I think I had a total of three PhotoShop files related to the design of this
             app.
           </p>
-
           <p>
             I faced many challenges while building the segment manager application. I would
             say the most challenging one was having to learn new scripting libraries as we
             went along. I made a lot of mistakes, but I was able to learn from them and keep
             moving forward.
           </p>
-
           <p>
             In the end, the UI turned out to be pretty good. The application shipped in 2013
             and is still being used till this day.
           </p>
-
           <div className={styles.spacer}/>
           <h3>Prototyping</h3>
           <p>
@@ -61,18 +58,15 @@ export default class ProjectDetails extends Component {
             experience. Since this concept was challenging for many to grasp, I decided to
             use prototyping as a means of testing its validity.
           </p>
-
           <p>
             I have built a lot of prototypes using a variety of scripting languages and
             tools. Tools are useful for small scale prototypes, but for this one, I needed
             something that would support a large-scale prototype. I decided to use the MEAN
             stack.
           </p>
-
           <div className={styles.wideImage}>
             <img src={require('images/audiencescience/prototype/details1.png')}/>
           </div>
-
           <p>
             Before I could begin, I had some design work to do before. Once the design was
             far enough along, I began my MEAN stack app by using a boilerplate. From there I
@@ -95,7 +89,6 @@ export default class ProjectDetails extends Component {
             was very useful in helping the company decided to move forward with building a
             single application that managed both segments and campaigns.
           </p>
-
           <div className={styles.spacer}/>
           <h3>Design</h3>
           <p>
@@ -143,7 +136,6 @@ export default class ProjectDetails extends Component {
             photoshop/illustrator design work. It is a good example of how design is much
             more than a beautiful picture.
           </p>
-
           <p>
             This application was one of the largest I had ever worked on. The next closest
             in size was OfficeLive. At one point, I had to bring in a couple of designers to
@@ -151,7 +143,6 @@ export default class ProjectDetails extends Component {
             As it sits today, I am the only designer working with 12 web developers. That
             ratio is a bit off balance, but I'm still managing to get by.
           </p>
-
         </div>
       </div>
     );

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styles from './styles.less';
+import {Link} from 'react-router';
 
 export default class ProjectDetails extends Component {
   constructor(props) {
@@ -27,41 +28,31 @@ export default class ProjectDetails extends Component {
             more of a design role.
           </p>
           <p>
-            I did many things at HealthVault and wore many hats. In 2009, I became the
-            primary designer for HealthVault Connection Center. A desktop app used to
-            connect devices with their HealthVault Account. It was at this time I got sick
-            of giving developers redlines and specs that showed them how the application
-            should look and work. While I was designing, I began building an application
-            called Ghost. A WPF application that had the sole purpose of eliminating
-            red-lines from my workflow. I called it Ghost because the main feature was to
-            superimpose an image on top of the developed UI. You can learn more about Ghost
-            in the tools section of my website.
-          </p>
-          <p>
-            When Ghost was completed, I gave it to developers, and needless to say, I
-            stopped doing redlines! I was now able to focus more on the design than on the
-            redlining and specs. That saved the company a lot of time and money. It also
-            allowed me more time to focus on more important things.
-
+            In 2009, I became the primary designer for HealthVault Connection Center. A
+            desktop app used to connect devices with their HealthVault Account. It was at
+            this time I got sick of giving developers redlines and specs that showed them
+            how the application should look and work. While I was designing, I began
+            building an application called Ghost. A WPF application that had the sole
+            purpose of eliminating red-lines from my workflow. I called it Ghost because the
+            main feature was to superimpose an image on top of the developed UI. You can
+            learn more about <Link to='/projects/tools'>Ghost</Link> in the tools section of my website.
           </p>
           <p>
             I began to take prototyping to a whole new level. I found WPF to be a very
-            efficient way to prototype desktop apps, so I began building a version of the
-            Connection Center application in WPF. It looked so real that it fooled
-            developers who were working on the product. They thought I had built the real
-            product. These realistic prototypes began finding their way into usability
-            studies. Potential users were now able to get a "real" feel for how the
-            application worked.
+            efficient way to prototype desktop apps, so I began building a version of 
+            the <Link to='/projects/tools'>Connection Center</Link> application in WPF. 
+            It looked so real that it fooled developers who were working
+            on the product. They thought I had built the real product. These realistic
+            prototypes began finding their way into usability studies. Potential users were
+            now able to get a "real" feel for how the application worked.
           </p>
-
           <p>
             Of all the things I could talk about with HealthVault, I bring up the
-            prototyping because, in hindsite, I can see the real value in doing this. Having
-            realistic prototypes were unheard of at this time. Designers were taught to use
+            prototyping because, in hindsight, I can see the value in having
+            realistic prototypes. They were unheard of at this time. Designers were taught to use
             images or wireframe flows that showed a UI flow. I was showing a new way of
-            doing this, and it didn't come without criticism or skepticism.
+            doing this, but it didn't come without criticism or skepticism.
           </p>
-
           <p>
             At the end of my time at HealthVault, I switched back to development. That was a
             challenge because, by this period, there were hundreds of people in the
@@ -80,11 +71,10 @@ export default class ProjectDetails extends Component {
           <p>
             Although I wouldn't realize it for years to come, it was at this time that I
             bridged the gap between design and development. I was faster than hardcore
-            Javascript, HTML, & CSS developers because I didn't have any of the issues
+            Javascript, HTML, &amp; CSS developers because I didn't have any of the issues
             present in a structure where developers and designers are on different teams.
           </p>
         </div>
-
       </div>
     );
   }
