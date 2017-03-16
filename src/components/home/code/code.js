@@ -75,7 +75,7 @@ export default class Code extends Component {
                             I still use this app when I'm working on a windows machine.
                         </p>
                         <div className={styles.linkContainer}>
-                            <a target="blank" href={require('downloads/Ghost.zip')}>Download Application (Windows Only)</a>
+                            <a href={require('downloads/Ghost.zip')}>Download Application (Windows Only)</a>
                         </div>
                         <Skills
                             legend={false}
@@ -97,7 +97,7 @@ export default class Code extends Component {
                             in the day. I had built a few of these that were used in usability studies. This is just one example.
                         </p>
                         <div className={styles.linkContainer}>
-                            <a target="blank" href={require('downloads/HVCC.zip')}>Download Application (Windows Only)</a>
+                            <a href={require('downloads/HVCC.zip')}>Download Application (Windows Only)</a>
                         </div>
                         <Skills
                             legend={false}
