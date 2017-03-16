@@ -44,7 +44,7 @@ export default class Code extends Component {
                     <div className={styles.item}>
                         <h4>Ghost - WPF</h4>
                         <p>
-                            This was an application I built because I hated redlining.
+                            This was an application I built because I hated redlining my designs!
                         </p>
                         <div className={styles.linkContainer}>
                             <a target="blank" href={require('downloads/Ghost.zip')}>Download Application (Windows Only)</a>
