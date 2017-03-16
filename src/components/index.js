@@ -1,4 +1,3 @@
-
 import Hero from './home/hero/hero';
 import Skills from './skills/skills';
 import TopNav from './topNav/topNav';

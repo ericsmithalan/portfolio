@@ -1,4 +1,3 @@
-
 import React, { Component, Animated } from 'react'
 import styles from './styles.less';
 

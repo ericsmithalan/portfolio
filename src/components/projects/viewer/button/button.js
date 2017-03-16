@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react'
 import styles from './styles.less';
 import { MdClose } from 'react-icons/md';
