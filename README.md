@@ -19,3 +19,7 @@ cd portfolio
 npm run prod
 ```
 all files will be coppied into your dist folder.
+
+## Screenshots
+![Screen 2](./src/common/images/screenshot2.png?raw=true "ScreenShot")
+![Screen 1](./src/common/images/screenshot1.png?raw=true "ScreenShot")
