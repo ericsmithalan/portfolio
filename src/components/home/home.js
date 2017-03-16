@@ -33,6 +33,13 @@ export default class Home extends Component {
                     />
                     <Cards />
                 </div>
+                <div id='codeContainer'>
+                    <ContentSection
+                        title='Code'
+                        paragraph='These are some projects that I am putting out there for the world to see. Please feel free to provide any feedback!.'
+                    />
+                    <Code />
+                </div>
                 <div id='skillsContainer'>
                     <ContentSection
                         title='Skills &amp; Tools'
@@ -46,13 +53,6 @@ export default class Home extends Component {
                         paragraph=''
                     />
                     <About/>
-                </div>
-                <div id='codeContainer'>
-                    <ContentSection
-                        title='Code'
-                        paragraph='These are some projects that I am putting out there for the world to see. Please feel free to provide any feedback!.'
-                    />
-                    <Code />
                 </div>
                 <TopNav data={ NavData.home } />
             </div>

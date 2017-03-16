@@ -29,6 +29,13 @@ export default {
     {
       href: 'javascript:void(0)',
       to: null,
+      image: MdCode,
+      title: 'code',
+      scrollTo: 'codeContainer',
+    },
+    {
+      href: 'javascript:void(0)',
+      to: null,
       image: MdStars,
       title: 'skills',
       scrollTo: 'skillsContainer',
@@ -39,14 +46,7 @@ export default {
       image: MdInfo,
       title: 'about me',
       scrollTo: 'aboutContainer',
-    },
-    {
-      href: 'javascript:void(0)',
-      to: null,
-      image: MdCode,
-      title: 'code',
-      scrollTo: 'codeContainer',
-    },
+    }
   ],
   project: [
     {
