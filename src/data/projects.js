@@ -992,7 +992,7 @@ export default[
     roll: 'Aviation Boatswais Mate 2',
     url: '/projects/navy',
     mainImage: require('images/navy/main.png'),
-    companyInfo: 'I was stationed aboard the USS Carl Vinson (CVN70) as an Aviation Boatswains Mate Fuels Petty Officer',
+    companyInfo: 'I was stationed aboard the aircraft carrier USS Carl Vinson (CVN70) as an Aviation Boatswains Mate Fuels Petty Officer',
     description: 'US Navy',
     skills: ['windows'],
     icon: require('images/navy/icon.png'),

@@ -10,10 +10,6 @@ export default class Shell extends Component {
         setIsLeftNavVisibility: React.PropTypes.func
     }
 
-    constructor(props) {
-        super(props);
-    }
-
     componentWillMount() {
         this.props.setIsLeftNavVisibility(false)
     }

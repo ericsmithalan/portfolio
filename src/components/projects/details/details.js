@@ -11,49 +11,46 @@ import Urbanearth from './urbanearth';
 import Valueappeal from './valueappeal';
 import Navy from './navy';
 
-export default class ProjectDetails extends Component {
-    static propTypes = {
-        data: React.PropTypes.object.isRequired
-    }
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        switch (this.props.data.id) {
-            case 'audiencescience':
-                return <Audiencescience/>
-                break;
-            case 'bcentral':
-                return <Bcentral/>
-                break;
-            case 'funstuff':
-                return <Funstuff/>
-                break;
-            case 'officelive':
-                return <Officelive/>
-                break;
-            case 'healthvault':
-                return <Healthvault/>
-                break;
-            case 'moonlighting':
-                return <Moonlighting/>
-                break;
-            case 'audiencescience':
-                return <Officelive/>
-                break;
-            case 'tools':
-                return <Tools/>
-                break;
-            case 'urbanearth':
-                return <Urbanearth/>
-                break;
-            case 'valueappeal':
-                return <Valueappeal/>
-                break;
-            case 'navy':
-                return <Navy/>
-                break;
-        }
+const ProjectDetails = (props) => {
+    switch (props.data.id) {
+        case 'audiencescience':
+            return <Audiencescience/>
+            break;
+        case 'bcentral':
+            return <Bcentral/>
+            break;
+        case 'funstuff':
+            return <Funstuff/>
+            break;
+        case 'officelive':
+            return <Officelive/>
+            break;
+        case 'healthvault':
+            return <Healthvault/>
+            break;
+        case 'moonlighting':
+            return <Moonlighting/>
+            break;
+        case 'audiencescience':
+            return <Officelive/>
+            break;
+        case 'tools':
+            return <Tools/>
+            break;
+        case 'urbanearth':
+            return <Urbanearth/>
+            break;
+        case 'valueappeal':
+            return <Valueappeal/>
+            break;
+        case 'navy':
+            return <Navy/>
+            break;
     }
 }
+
+ProjectDetails.propTypes = {
+    data: React.PropTypes.object.isRequired
+}
+
+export default ProjectDetails;

@@ -1,26 +1,22 @@
-import React, { Component } from 'react'
+import React  from 'react'
 import styles from './styles.less';
 import { MdClose } from 'react-icons/md';
 
-export default class DetailNavButton extends Component {
-    static propTypes = {
-        setSelectedProjectSubItem: React.PropTypes.func.isRequired
+const DetailNavButton = (props) => {
+    const handleClick = () => {
+        props.setSelectedProjectSubItem(null);
     }
 
-    constructor(props) {
-        super(props);
-    }
-
-    _handleClick() {
-        this.props.setSelectedProjectSubItem(null);
-    }
-
-    render() {
-        return (
-            <a href="javascript:void(0)" onClick={() => this._handleClick()} className={styles.container}>
-                <MdClose className={styles.closeIcon}/>
-                <div className={styles.background}></div>
-            </a>
-        )
-    }
+    return (
+        <a href="javascript:void(0)" onClick={() => handleClick()} className={styles.container}>
+            <MdClose className={styles.closeIcon}/>
+            <div className={styles.background}></div>
+        </a>
+    )
 }
+
+DetailNavButton.propTypes = {
+    setSelectedProjectSubItem: React.PropTypes.func.isRequired
+}
+
+export default DetailNavButton;

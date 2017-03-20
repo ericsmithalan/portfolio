@@ -2,27 +2,23 @@ import React, { Component } from 'react'
 import styles from './styles.less';
 import { MdClose } from 'react-icons/md';
 
-export default class ViewerCloseButton extends Component {
-    static propTypes = {
-        setSelectedProjectElementId: React.PropTypes.func.isRequired,
-        setSelectedProjectItem: React.PropTypes.func.isRequired,
-    }
-    
-    constructor(props) {
-        super(props);
+const ViewerCloseButton = (props) => {
+    const handleClick = () => {
+        props.setSelectedProjectElementId(null);
+        props.setSelectedProjectItem(null);
     }
 
-    _handleClick() {
-        this.props.setSelectedProjectElementId(null);
-        this.props.setSelectedProjectItem(null);
-    }
-
-    render() {
-        return (
-            <a href="javascript:void(0)" onClick={() => this._handleClick()} className={styles.container}>
-                <MdClose className={styles.closeIcon}/>
-                <div className={styles.background}></div>
-            </a>
-        )
-    }
+    return (
+        <a href="javascript:void(0)" onClick={handleClick} className={styles.container}>
+            <MdClose className={styles.closeIcon}/>
+            <div className={styles.background}></div>
+        </a>
+    )
 }
+
+ViewerCloseButton.propTypes = {
+    setSelectedProjectElementId: React.PropTypes.func.isRequired,
+    setSelectedProjectItem: React.PropTypes.func.isRequired,
+}
+
+export default ViewerCloseButton;

@@ -1,63 +1,55 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styles from './styles.less';
-import { Link } from 'react-router';
+import {Link} from 'react-router';
 import imageStyles from '../../../common/styles/images.less';
 import classNames from 'classnames';
 
-export default class DetailNavLink extends Component {
-    static propTypes = {
-        data: React.PropTypes.object.isRequired,
-        to: React.PropTypes.string.isRequired,
-    }
-
-    constructor(props) {
-        super(props);
-    }
-
-    _setIcon() {
-        if (typeof this.props.data.icon === 'function') {
-            var Icon = this.props.data.icon;
-            return <Icon className={styles.mdIcon} />
-        }
-        else {
-            return <div className={this._getImageClass()} />
+const DetailNavLink = (props) => {
+    const setIcon = () => {
+        if (typeof props.data.icon === 'function') {
+            var Icon = props.data.icon;
+            return <Icon className={styles.mdIcon}/>
+        } else {
+            return <div className={getImageClass()}/>
         }
     }
 
-     _getImageClass() {
+    const getImageClass = () => {
         let iconStyle = null
-            
-        JSON.parse(JSON.stringify(imageStyles), (key, value) => { 
-            if (key.toString() === 'icon_' + this.props.data.id) {
-                 
+
+        JSON.parse(JSON.stringify(imageStyles), (key, value) => {
+            if (key.toString() === 'icon_' + props.data.id) {
+
                 iconStyle = value;
                 return;
             }
         });
-       
+
         return classNames(styles.icon, iconStyle);
     }
 
-     _getLinkClass() {
-        if (!this.props.data.isReady){
+    const getLinkClass = () => {
+        if (!props.data.isReady) {
             return classNames(styles.container, styles.notReady);
         }
 
         return styles.container;
-    }    
-    render() {
-        return (
-            <Link
-                activeClassName={styles.active}
-                to={this.props.to}
-                className={this._getLinkClass()}>
-                    <div className={styles.background} />
-                    {this._setIcon()}
-                    <div className={styles.text}>
-                        <div className={styles.title}>{this.props.data.title}</div>    
-                        <div className={styles.year}>{this.props.data.end}</div>
-                    </div>
-            </Link>
-        )
     }
+
+    return (
+        <Link activeClassName={styles.active} to={props.to} className={getLinkClass()}>
+            <div className={styles.background}/> {setIcon()}
+            <div className={styles.text}>
+                <div className={styles.title}>{props.data.title}</div>
+                <div className={styles.year}>{props.data.end}</div>
+            </div>
+        </Link>
+    )
 }
+
+DetailNavLink.propTypes = {
+    data: React.PropTypes.object.isRequired,
+    to: React.PropTypes.string.isRequired
+}
+
+export default DetailNavLink;
