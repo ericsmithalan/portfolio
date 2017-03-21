@@ -61,6 +61,13 @@
                     align-self: center;
                 }
             }
+
+            .screenshot{
+                width: 800px;
+                margin-bottom: @spacing-xlarge;
+                margin-top: @spacing-xlarge;
+                box-shadow: 0 0 40px rgba(0,0,0,0.5);
+            }
             
         }
 
@@ -71,6 +78,9 @@
 @media screen and (max-width: 1024px){
     .container{
         .flexContainer{
+            .screenshot{
+                width: 800px;
+            }
             .item{
                 width: 800px;
             }
@@ -83,6 +93,9 @@ and (min-device-width : 1024px)
 and (max-device-width : 1366px) { 
     .container{
         .flexContainer{
+            .screenshot{
+                width: 800px;
+            }
             .item{
                 width: 800px;
             }
@@ -95,6 +108,12 @@ and (max-device-width : 1366px) {
         padding-right: @spacing-xlarge;
         padding-left: @spacing-xlarge;
         .flexContainer{
+            .screenshot{
+                min-width: 200px;
+                max-width: 400px;
+                margin-left: @spacing-xlarge;
+                margin-right: @spacing-xlarge;
+            }
             .item{
                 width: 100%;
             }
@@ -107,6 +126,12 @@ and (max-device-width : 1366px) {
         padding-right: @spacing-xlarge;
         padding-left: @spacing-xlarge;
         .flexContainer{
+            .screenshot{
+                 min-width: 200px;
+                max-width: 300px;
+                margin-left: @spacing-xlarge;
+                margin-right: @spacing-xlarge;
+            }
             .item{
                 width: 100%;
             }

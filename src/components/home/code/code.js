@@ -12,10 +12,14 @@ const Code = (props) => {
                         I've been asked to share my source code for this website a few times, so here it
                         is.
                     </p>
+                   
                     <div className={styles.linkContainer}>
                         <img className={styles.githubIcon} src={require('images/GitHub.png')}/>
                         <a target="blank" href="https://github.com/heathornhawk/portfolio">View Project</a>
                     </div>
+                     <img className={styles.screenshot} src={require('images/screenshot3.png')} />
+                 
+
                     <Skills
                         legend={false}
                         ategory='all'
@@ -46,6 +50,8 @@ const Code = (props) => {
                         <img className={styles.githubIcon} src={require('images/GitHub.png')}/>
                         <a target="blank" href="https://github.com/heathornhawk/weather-app">View Project</a>
                     </div>
+                    <img className={styles.screenshot} src={require('images/screenshot4.png')} />
+                 
                     <Skills
                         legend={false}
                         ategory='all'
@@ -73,6 +79,8 @@ const Code = (props) => {
                     <div className={styles.linkContainer}>
                         <a href={require('downloads/Ghost.zip')}>Download Application (Windows Only)</a>
                     </div>
+                    <img className={styles.screenshot} src={require('images/tools/ghost/two.jpg')} />
+                    
                     <Skills
                         legend={false}
                         ategory='all'
@@ -91,9 +99,12 @@ const Code = (props) => {
                         Prototypes with this level of realism were unheard of back in the day. I had
                         built a few like this that were used in usability studies.
                     </p>
+                   
                     <div className={styles.linkContainer}>
                         <a href={require('downloads/HVCC.zip')}>Download Application (Windows Only)</a>
                     </div>
+                     <img className={styles.screenshot} src={require('images/tools/hvcc/two.jpg')} />
+                 
                     <Skills
                         legend={false}
                         ategory='all'
