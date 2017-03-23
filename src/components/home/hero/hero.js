@@ -45,7 +45,7 @@ export default class Hero extends Component {
                     ERIC SMITH
                 </h1>
                 <h4 className={styles.subTitle}>
-                    design technologist - designer/coder
+                    designer/coder
                 </h4>
                 <div className={styles.experience}>
                    passionate about user experience design and ui development.
