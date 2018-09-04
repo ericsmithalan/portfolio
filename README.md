@@ -1,9 +1,6 @@
 # portfolio
 This is the source code to my portfolio site. Please feel free to provide any feedback. I'm always looking to improve and learn!
 
-My portfolio:
-[http://ericsmithportfolio.com](http://ericsmithportfolio.com)
-
 ## Development
 ```sh
 cd portfolio
