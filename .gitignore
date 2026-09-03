@@ -53,6 +53,7 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.envnode_modules
-
+.env
+.node_modules
+.package-lock.json
 .vscode
